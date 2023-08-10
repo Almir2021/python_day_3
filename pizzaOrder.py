@@ -6,35 +6,41 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-pizzaPrice = 0 
+pizzaPrice = 0
 
-if size == "S" or size ==  "s":
-  pizzaPrice +=15
-elif add_pepperoni == "Y" or add_pepperoni == "y":
-  pizzaPrice +=2
-elif   extra_cheese == "Y" or extra_cheese =="Y":
-  pizzaPrice +=1 
-
-
-if size == "M" or size ==  "m":
+if size == "S" or size == "s":
+   pizzaPrice +=15
+elif size == "M" or size ==  "m":
    pizzaPrice +=20
-
-elif add_pepperoni == "Y" or add_pepperoni == "y":
-  pizzaPrice +=3
-
-elif   extra_cheese == "Y" or extra_cheese =="Y":
-  pizzaPrice +=1 
-
-
-
-if size == "L" or size == "l" :
+else:
  pizzaPrice +=25
 
-elif add_pepperoni == "Y" or add_pepperoni == "y":
-  pizzaPrice +=3
 
-elif   extra_cheese == "Y" or extra_cheese =="Y":
-  pizzaPrice +=1 
+if pizzaPrice == 15:
+  if add_pepperoni == "Y" or add_pepperoni == "y": 
+    pizzaPrice +=2 
+elif extra_cheese == "Y" or extra_cheese =="y":
+          pizzaPrice +=1
+
+
+if pizzaPrice == 25:
+   if add_pepperoni == "Y" or add_pepperoni == "y":
+     pizzaPrice +=3
+elif   extra_cheese == "Y" or extra_cheese =="y":
+      pizzaPrice +=1 
+
+
+
+if pizzaPrice == 25:
+ if add_pepperoni == "Y" or add_pepperoni == "y":
+  pizzaPrice +=3
+elif   extra_cheese == "Y" or extra_cheese =="y":
+   pizzaPrice +=1 
+
 
 
 print(f"Your final bill is: ${pizzaPrice}")
+
+
+
+
