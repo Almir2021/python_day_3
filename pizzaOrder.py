@@ -10,33 +10,25 @@ pizzaPrice = 0
 
 if size == "S" or size == "s":
    pizzaPrice +=15
-elif size == "M" or size ==  "m":
-   pizzaPrice +=20
-else:
- pizzaPrice +=25
-
-
-if pizzaPrice == 15:
-  if add_pepperoni == "Y" or add_pepperoni == "y": 
+if add_pepperoni == "Y" and size == "S":
     pizzaPrice +=2 
-elif extra_cheese == "Y" or extra_cheese =="y":
+elif extra_cheese == "Y" and size == "S":
           pizzaPrice +=1
 
 
-if pizzaPrice == 25:
-   if add_pepperoni == "Y" or add_pepperoni == "y":
+if size == "M" or size ==  "m":
+   pizzaPrice +=20
+if add_pepperoni == "Y" and size == "M":
      pizzaPrice +=3
-elif   extra_cheese == "Y" or extra_cheese =="y":
+elif   extra_cheese == "Y"  and size == "M":
       pizzaPrice +=1 
 
-
-
-if pizzaPrice == 25:
- if add_pepperoni == "Y" or add_pepperoni == "y":
-  pizzaPrice +=3
-elif   extra_cheese == "Y" or extra_cheese =="y":
-   pizzaPrice +=1 
-
+if size == "L"  or size == "l":
+ pizzaPrice +=25
+if add_pepperoni == "Y" and size == "L" :
+     pizzaPrice +=3
+elif   extra_cheese == "Y" and size == "L":
+      pizzaPrice +=1 
 
 
 print(f"Your final bill is: ${pizzaPrice}")
