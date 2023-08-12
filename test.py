@@ -7,20 +7,22 @@ if height > 120 :
     if age <12: 
      bill = 5
      print ("Child ticket are 5$ ")
-    elif  age <= 18 :
+    elif  age < 18 :
        bill = 7
        print("Youth tickets are 7$ ")
-    else:
+    elif age > 18 and  age < 45  :
       bill = 12
       print(" Adult tickets are  12$  ")
-
-    wantsPhoto =  input ("Do you want a photo taken? Y or N. ")
+    elif age >= 45 and age <= 55 :
+     print(f"Your price ticke is price {bill}$ ") 
+    
+     wantsPhoto =  input ("Do you want a photo taken? Y or N. ")
 
     if wantsPhoto == "Y" or wantsPhoto == "y" :
        bill += 3
        print(f"Your price ticke is price {bill}$ ")
-       if wantsPhoto == "N" or wantsPhoto == "n":
-        print(f"Your price ticke is price {bill}$ ") 
+    elif wantsPhoto == "N" or wantsPhoto == "n":
+         print(f"Your price ticke is price {bill}$ ") 
 
 
 else :
